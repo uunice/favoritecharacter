@@ -12,17 +12,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
+}
 
 .nav-item{
     list-style: none;
     margin-right: 2rem;
-  }
+}
 
 .nav-item a {
     text-decoration: none;
     color: white;
-  }
+}
 
 a:hover{
     color: rgb(96, 136, 183);
@@ -35,11 +35,9 @@ a:hover{
 
 .banner{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 3;
-    position: relative;
-    top: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 65px;
     margin-bottom: 100px;
 }
 
@@ -52,12 +50,12 @@ body {
     margin: 0;
     display: flex;
     flex-shrink: 3;
-  }
+}
 
 h1{
     color: black;
     text-align: center;
-  }
+}
 
 h2{
     color: black;
@@ -193,4 +191,91 @@ p{
     grid-column: 1 / 4;
     margin: 20px;
     justify-content: flex-start;
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+
+    .nav-item:first-child{
+        margin-right: auto;
+        margin-left: 1rem;
+    }
+
+
+    .nav-item{
+        list-style: none;
+        margin-right: 1rem;
+        font-size: 0.6rem;
+    }
+
+
+.banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+}
+
+.introduction{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 30px;
+    }
+
+.myfavoritecharacters{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    }
+    
+h2{
+    color: white;
+    text-align:center;
+    font-style: italic;
+    font-size: 30px;
+    }
+    
+h3{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+    }
+    
+h4{
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    }
+    
+h5{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    }
+    
+p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    }
+
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
 }
